@@ -11,17 +11,16 @@ Mining Massive Datasets
 - Panayiotis Liotatis
 
 # Website
-[https://machinehack.com/hackathons](https://www.kaggle.com/)
+[https://www.kaggle.com/](https://www.kaggle.com)
 # Dataset
-[Dataset] [(https://machinehack.com/hackathons/iiit_nr_taxi_trip_fare_prediction_challenge/overview)](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction/data)
-
+[Dataset] https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction
 
 # Dataset Info
 |File    | Number of Rows|Number of Columns|
 |--------|---------------|-----------------|
 |Economy | 206774        | 11              |
 |Business| 93487         | 11              |
-|Clean   |    ?          | ?               |
+|Clean   | 299999        | 13              |
 
 #### Columns of Business and Economy
 | Column Name | Description                                     |
@@ -40,15 +39,16 @@ Mining Massive Datasets
 
 | Feature          | Description                                                                                            | Unique Values                              |
 |------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------|
+|(new) Day of week | Day of the departure                                                                                   | 7                                          |
 | Airline          | Name of the airline company                                                                            | 6                                          |
-| Flight           | Information regarding the plane's flight code                                                          | -                                          |
+| Flight           | Information regarding the plane's flight code                                                          | column removed                             |
 | Source City      | City from which the flight takes off                                                                   | 6                                          |
 | Departure Time   | Categorical feature obtained by grouping time periods into bins                                        | 6                                          |
-| Stops            | Number of stops between the source and destination cities                                              | 3                                          |
+| Stops            | Number of stops between the source and destination cities                                              | 3 (0,1,2)                                  |
 | Arrival Time     | Categorical feature created by grouping time intervals into bins                                       | 6                                          |
 | Destination City | City where the flight will land                                                                        | 6                                          |
 | Class            | Information on seat class                                                                              | 2 (Business, Economy)                      |
-| Duration         | Overall amount of time it takes to travel between cities in hours                                      | Continuous                                 |
+| Duration         | Overall amount of time it takes to travel between cities in minutes                                    | Continuous                                 |
 | Days Left        | Derived characteristic calculated by subtracting the trip date by the booking date                     | Continuous                                 |
 | Price            | Target variable storing the ticket price                                                               | Continuous                                 |
 
